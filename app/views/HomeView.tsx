@@ -142,14 +142,17 @@
 // }
 
 "use client"
-import { useEffect, useState, useRef } from "react";
+// Import necessary modules and components
+import React, { useEffect, useState, useRef } from "react";
 
+// Declare a global interface to add the webkitSpeechRecognition property to the Window object
 declare global {
   interface Window {
     webkitSpeechRecognition: any;
   }
 }
 
+// Export the MicrophoneComponent function component
 export default function MicrophoneComponent() {
   const [isRecording, setIsRecording] = useState(false);
   const [recordingComplete, setRecordingComplete] = useState(false);
