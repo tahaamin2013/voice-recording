@@ -104,6 +104,7 @@ export default function MicrophoneComponent() {
           {isRecording ? (
             // Button for stopping recording
             <button
+            aria-label="recordingcontinue"
               onClick={handleToggleRecording}
               className="mt-10 m-auto flex items-center justify-center bg-red-400 hover:bg-red-500 rounded-full w-20 h-20 focus:outline-none"
             >
@@ -118,6 +119,7 @@ export default function MicrophoneComponent() {
           ) : (
             // Button for starting recording
             <button
+            aria-label="Reacrdingbutton"
               onClick={handleToggleRecording}
               className="mt-10 m-auto flex items-center justify-center bg-blue-400 hover:bg-blue-500 rounded-full w-20 h-20 focus:outline-none"
             >
